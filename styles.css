@@ -1,6 +1,32 @@
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-color: rgb(11, 11, 79);
+}
+
+h1 {
+    font-family: cursive;
+    color: papayawhip;
+}
+
+h2 {
+    font-family: cursive;
+    color: #8DECB4;
+}
+
+h3 {
+    font-family: cursive;
+    color: seashell;
+}
+
+hr {
+    border-style: dotted;
+    border-color: aquamarine;
+}
 table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
+    border-style: inset;
     font-family: sans-serif;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -14,7 +40,7 @@ table {
   
   thead,
   tfoot {
-    background-color: rgb(228 240 245);
+    background-color: #FFBB70;
   }
   
   th,
@@ -28,8 +54,12 @@ table {
   }
   
   tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
+    background-color: #FFEC9E;
+  }  
+
+  tbody > tr:nth-of-type(odd) {
+    background-color: #FFF2D7;
+  }  
   
   tfoot th {
     text-align: right;
@@ -38,4 +68,31 @@ table {
   tfoot td {
     font-weight: bold;
   }
-  
+
+.profile-pic {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-pic img {
+    width: auto;
+    height: 100%;
+    margin-left: -70px;
+}
+
+.column {
+    flex:33.33%;
+    margin-right: 1px;
+}
+.column img {
+    width: 85%;
+    height: auto;
+    border-radius: 50%;
+}
+.row {
+    display: flex;
+}
